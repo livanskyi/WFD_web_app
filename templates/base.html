@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>{% block title %}{% endblock %}</title>
+    <style>
+        body {
+            background:#249744;
+        }
+    </style>
+</head>
+<body>
+<div><br>
+    <h1 align="center" style="color:#fff; font-weight:100">AI Fraud Detection App</h1><br>
+</div>
+<div style="background:#fff; border-top-left-radius: 5px; border-top-right-radius: 5px; height: 100vh;"><br>
+    {% block body %}{% endblock %}
+</div>
+</body>
+</html>
