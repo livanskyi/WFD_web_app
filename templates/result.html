@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Result | AI Fraud Detection App
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h3>Download the result:</h3><br>
+    <a href="/static/files/{{username}}/{{result_file}}" download>
+    <input type="button" name="result" id="result" class="btn btn-success" value="  Download  ">
+    </a>
+</div>
+<div class="container mt-5">
+        <a href="/user/{{username}}"><< Main page</a>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Main | AI Fraud Detection App
+{% endblock %}
+
+{% block body %}
+<div class="container mt-5">
+    <h3>Main page | Hello, {{username}}</h3><br>
+    <form action="/processing/{{username}}" method="post" enctype="multipart/form-data">
+        <p>1. Select files with operations you want to check</p>
+        <input type="file" name="user_file" id="user_file" required multiple><br><br>
+        <input type="submit" class="btn btn-success" value="   Run model   ">
+    </form>
+</div>
+{% endblock %}
